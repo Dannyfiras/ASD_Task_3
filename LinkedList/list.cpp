@@ -98,8 +98,23 @@ address findElm(List L, infotype x) {
 
     address P;
     //-------------your code here-------------
-    // NIM : 
-    
+    // NIM : 1301154351
+    p = first(L);
+    if (first(L)!=NULL)
+    {
+        while ((info(p)!=x) && (next (p) != NULL))
+        {
+            p=next(p);
+        }
+        if (info(p) != x)
+        {
+            p= NULL;
+        }
+    }
+    else
+    {
+       	p = NULL;
+    }
 	
     //----------------------------------------
     return P;
@@ -136,7 +151,7 @@ void printInfo(List L) {
     * FS : menampilkan info seluruh elemen list L
     */
     //-------------your code here-------------
-    // NIM : 
+    // NIM : 1301154351
 
 	
     //----------------------------------------
@@ -163,7 +178,7 @@ void deleteAfter(address Prec, address &P) {
     *      dan disimpan/ditunjuk oleh P
     */
     //-------------your code here-------------
-    // NIM : 
+    // NIM : 1301154351
     
 	
     //----------------------------------------
